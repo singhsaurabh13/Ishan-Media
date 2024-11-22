@@ -1,0 +1,56 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+@keyframes marquee-reverse {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+.animate-marquee-reverse {
+  animation: marquee-reverse 15s linear infinite;
+}
+
+/* Define the slide-in animation from the left */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);  /* Start from off-screen on the left */
+    opacity: 0;                    /* Invisible at the start */
+  }
+  100% {
+    transform: translateX(0);      /* End at the normal position */
+    opacity: 1;                    /* Fully visible at the end */
+  }
+}
+
+/* Apply the animation to elements with the 'slide-in-left' class */
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards; /* 1s duration and ease-out easing */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+
+
