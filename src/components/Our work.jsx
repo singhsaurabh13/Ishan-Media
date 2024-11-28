@@ -45,9 +45,9 @@ const Ourwork = () => {
           alt="First Image" 
           className="rounded-lg shadow-lg mb-4 w-full h-auto object-cover" 
         />
-        <h1 className="text-2xl font-bold text-center mb-2 font-serif">Heading 1</h1>
+        <h1 className="text-2xl font-bold text-center mb-2 font-serif">Power upgrade for a power snack</h1>
         <p className="text-lg text-center text-black font-serif">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ipsa?
+        ATL, BTL, Digital, Digital e-commerce, Amazon, Media Management
         </p>
       </div>
 
@@ -58,9 +58,9 @@ const Ourwork = () => {
           alt="Second Image" 
           className="rounded-lg shadow-lg mb-4 w-full h-auto object-cover" 
         />
-        <h1 className="text-2xl font-bold text-center mb-2 font-serif">Heading 2</h1>
+        <h1 className="text-2xl font-bold text-center mb-2 font-serif">India’s grandest character parade</h1>
         <p className="text-lg text-center text-black font-serif">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ipsa?
+        360° Creative and Digital marketing campaign
         </p>
       </div>
     </div>
@@ -165,7 +165,7 @@ const Ourwork = () => {
         <p className="text-black font-serif">OPI</p>
       </div>
     </div>
-    <div className="bg-white py-12 px-6 sm:px-12 lg:px-24">
+    <div className="bg-white px-10">
       {/* Title */}
       <div className="mb-10">
         <h2 className="text-3xl sm:text-4xl font-bold relative inline-block">
@@ -176,15 +176,15 @@ const Ourwork = () => {
         </h2>
       </div>
       {/* Content */}
-      <div className="flex flex-col lg:flex-row items-center lg:items-center gap-10">
+      <div className="">
         {/* Left: Salad Image */}
-        <div className="w-full lg:w-full relative">
+        <div className="w-full  relative">
           <img
             src="https://www.ting.in/dist/img/our-work/brand-videos/salad-anyone.jpg" // Replace with your image link
             alt="Salad Bowl"
-            className="rounded-lg shadow-md max-w-3xl border border-dashed border-black "/>
+            className="rounded-lg w-full shadow-md  border border-dashed border-black "/>
           {/* Play Button */}
-          <button className="absolute bottom-4 right-4 w-10 h-10 bg-black text-white flex items-center justify-center rounded-full shadow-md hover:bg-gray-800">
+          {/* <button className="absolute bottom-4 right-4 w-10 h-10 bg-black text-white flex items-center justify-center rounded-full shadow-md hover:bg-gray-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -197,12 +197,12 @@ const Ourwork = () => {
                 strokeLinejoin="round"
                 d="M14.752 11.168l-6.518-4.149c-.75-.478-1.734.11-1.734.986v8.09c0 .876.984 1.464 1.734.986l6.518-4.148a1.15 1.15 0 000-1.965z"/>
             </svg>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
 
-    <div className="bg-white py-12 px-6 sm:px-12 lg:px-24">
+    <div className="bg-white py-12 px-10 ">
       {/* Title */}
       <div className="mb-8">
         <h2 className="text-3xl sm:text-5xl relative inline-block">

@@ -10,7 +10,7 @@ import logo5 from "../assets/logo6.jpg"
 import logo6 from "../assets/logo7.jpg"
 import logo7 from "../assets/logo8.jpg"
 import logo8 from "../assets/logo9.jpg"
-import img from "../assets/cycle.png"
+import img from "../assets/cycle2.png"
 function Contact() {
   return (
     <>
@@ -100,7 +100,7 @@ function Contact() {
       {/* Submit Button */}
       <button
         type="submit"
-        className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-700 shadow-lg transition-all duration-300"
+        className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 rounded-xl font-semibold hover:bg-gradient-to-r hover:from-orange-600 hover:to-orange-700 shadow-lg transition-all duration-300"
       >
         Submit
       </button>

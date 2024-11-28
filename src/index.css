@@ -3,10 +3,26 @@
 @tailwind utilities;
 
 
+
 #root{
     
     background: #6B6B6B;
-    padding: 0 300px;
+    padding: 0 30px;
 }
 
+@media only screen and (min-width: 600px) {
+    #root{
+    
+        background: #6B6B6B;
+        padding: 0 70px;
+    }
+  }
+
+  @media only screen and (min-width: 1040px) {
+    #root{
+    
+        background: #6B6B6B;
+        padding: 0 200px;
+    }
+  }
 

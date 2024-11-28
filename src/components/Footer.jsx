@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import logo from '../assets/logo.png'
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-blue-800 via-blue-900 to-gray-900 text-white">
+    <footer className="bg-gradient-to-r from-orange-700 via-orange-800 to-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h2 className="text-xl font-semibold">Company Name</h2>
+            {/* <h2 className="text-xl font-semibold">Company Name</h2> */}
+            <Link to="/"><img src={logo} alt="" /></Link>
             <p className="mt-2 text-sm text-gray-200">
             Delivering unparalleled quality and excellence since 2000. We pride ourselves on exceeding expectations through customer-centric solutions, innovation, and a commitment to creating lasting value.
             </p>
@@ -20,24 +22,24 @@ export default function Footer() {
             <h3 className="text-lg font-semibold ">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <a href="/ourwork" className="text-gray-300 hover:text-white">
+                <Link to="/ourwork" className="text-gray-300 hover:text-white">
                   Our Work
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/service" className="text-gray-300 hover:text-white">
+                <Link to="/service" className="text-gray-300 hover:text-white">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/team" className="text-gray-300 hover:text-white">
+                <Link to="/team" className="text-gray-300 hover:text-white">
                   Team
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-gray-300 hover:text-white">
+                <Link to="/contact" className="text-gray-300 hover:text-white">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -90,7 +92,7 @@ export default function Footer() {
         </div> 
         <Link to="https://techxpert.in/">
           <div className="mt-8 border-t border-gray-500 pt-4 text-center">
-            <p className="text-xl text-gray-200">
+            <p className="text-[14px] text-gray-200">
               © {new Date().getFullYear()} Created by TechXpert.
             </p>
           </div>

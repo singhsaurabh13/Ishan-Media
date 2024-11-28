@@ -8,6 +8,7 @@ import Ourwork from './components/Our work.jsx'
 import Services from './components/Services.jsx'
 import Team from './components/Team.jsx'
 import Contact from './components/Contact.jsx'
+import TestimonialCarousel from './components/Testimonial.jsx'
 
 
 
@@ -19,6 +20,7 @@ const router=createBrowserRouter(
       <Route path='/service' element={<Services/>}/>
       <Route path='/team' element={<Team/>}/>
       <Route path='/contact' element={<Contact/>}/>
+      <Route path='/testimonial' element={<TestimonialCarousel/>}/>
     </Route>
   )
 )

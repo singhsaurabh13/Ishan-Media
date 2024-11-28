@@ -1,10 +1,15 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-import img from "../assets/build.png";
-import img1 from "../assets/build2.png";
+import img from "../assets/build4.png";
+import img1 from "../assets/build3.png";
+import overlay from '../assets/Watworx_.png'
 
 function Home1() {
   return (
+   <>
+   {/* <div className='w-full fixed top-0 '>
+    <img src={overlay} alt="" className=''/>
+   </div> */}
     <div className="relative min-h-screen bg-black text-white font-sans flex flex-col items-center justify-center px-4">
       {/* Top Scrolling Marquee */}
       <Marquee
@@ -18,7 +23,7 @@ function Home1() {
 
       {/* Left Vertical Scrolling Marquee */}
       <div className="absolute left-0 top-0 h-full w-16 overflow-hidden z-10 flex flex-col items-center">
-        <Marquee
+        {/* <Marquee
           gradient={false}
           direction="up"
           speed={50}
@@ -27,12 +32,12 @@ function Home1() {
           <div className="text-[#ff9933] text-xs uppercase tracking-widest transform rotate-90 whitespace-nowrap">
             Hello! You know why you need a little yellow hello! You know what we do now but do you reallyyy know what we do?
           </div>
-        </Marquee>
+        </Marquee> */}
       </div>
 
       {/* Right Vertical Scrolling Marquee */}
       <div className="absolute right-0 top-0 h-full w-16 overflow-hidden z-10 flex flex-col items-center">
-        <Marquee
+        {/* <Marquee
           gradient={false}
           direction="down"
           speed={50}
@@ -41,7 +46,7 @@ function Home1() {
           <div className="text-[#ff9933] text-xs uppercase tracking-widest transform rotate-90 whitespace-nowrap">
             Hello! You know why you need a little yellow hello! You know what we do now but do you reallyyy know what we do?
           </div>
-        </Marquee>
+        </Marquee> */}
       </div>
 
       {/* Main Content */}
@@ -92,6 +97,8 @@ function Home1() {
         Scroll to know why you need a little yellow hello! You know what we do now but do you reallyyy know what we do?
       </Marquee>
     </div>
+   </>
+
   );
 }
 

@@ -20,9 +20,10 @@ import logo16 from "../assets/logo16.jpg"
 import Slider from './Slider';
 import Contact from './Contact';
 import Home1jsx from './Home1';
-import hut from '../assets/hut.png'
+import hut from '../assets/hut-1.png'
 import stone from '../assets/stone.png'
 import Animation from './Animation';
+import TestimonialCarousel from './Testimonial';
 
 const Home = () => {
   
@@ -118,20 +119,20 @@ const Home = () => {
     <img
       src={stone}
       alt="Award 1"
-      className="w-40 mt-4 animate__animated animate__bounceIn"/>
+      className="w-20 lg:w-40 mt-4 animate__animated animate__bounceIn"/>
     <img
       src={stone}
       alt="Award 2"
-      className="w-40 mt-4 animate__animated animate__bounceIn" />
+      className="w-20 lg:w-40 mt-4 animate__animated animate__bounceIn" />
   </div>
 </div>
 
     </div>
 
     {/* About Us Section */}
-    <div className="mt-10 space-y-8 md:flex md:space-x-8">
+    <div className="mt-10 space-y-8 lg:flex md:space-x-8">
   {/* Left Section with Images in Vertical Layout */}
-  <div className="w-full md:max-w-sm mx-auto animate__animated animate__fadeIn animate__delay-2s space-y-4">
+  <div className="w-full lg:max-w-sm mx-auto animate__animated animate__fadeIn animate__delay-2s space-y-4">
     {/* First Image */}
     <div className="animate__animated animate__fadeIn animate__delay-4s">
       <img
@@ -150,7 +151,7 @@ const Home = () => {
   </div>
 
   {/* Right Section - Text Content */}
-  <div className="w-full md:w-2/3 mx-auto mt-8 md:mt-0 animate__animated animate__fadeIn animate__delay-3s space-y-8">
+  <div className="w-full pr-10 lg:w-2/3 mx-auto mt-8 md:mt-0 animate__animated animate__fadeIn animate__delay-3s space-y-8">
     {/* First Text Block */}
     <div>
       <h1 className="text-xl mb-4 font-bold text-gray-900 font-serif">
@@ -183,9 +184,9 @@ const Home = () => {
       </h1>
 
      
-      <div className="flex gap-6 justify-center mt-20">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-20 gap-5">
   {/* Image 1 */}
-  <div className="w-1/5">
+  <div className="">
     <img
       src="https://www.ting.in/dist/img/home/sudi.jpg"
       alt="Product 1"
@@ -196,7 +197,7 @@ const Home = () => {
   </div>
 
   {/* Image 2 */}
-  <div className="w-1/5">
+  <div className="">
     <img
       src="https://www.ting.in/dist/img/home/shruti.jpg"
       alt="Product 2"
@@ -207,7 +208,7 @@ const Home = () => {
   </div>
 
   {/* Image 3 */}
-  <div className="w-1/5">
+  <div className="">
     <img
       src="https://www.ting.in/dist/img/home/manan.jpg"
       alt="Product 3"
@@ -218,7 +219,7 @@ const Home = () => {
   </div>
 
   {/* Image 4 */}
-  <div className="w-1/5">
+  <div className="">
     <img
       src="https://www.ting.in/dist/img/home/aadil.jpg"
       alt="Product 4"
@@ -229,7 +230,7 @@ const Home = () => {
   </div>
 
   {/* Yellow Background Box */}
-  <div className="w-1/5 bg-[#ff9933] p-6 flex items-center justify-center rounded-lg">
+  <div className=" bg-[#ff9933] p-6 h-72 flex items-center justify-center rounded-lg">
     <h1 className="text-center text-lg font-semibold text-black">Meet the other 500</h1>
   </div>
 </div>
@@ -257,6 +258,8 @@ const Home = () => {
 <Slider/>
 <Animation/>
 <Contact/>
+<TestimonialCarousel/>
+
     </>
   );
 };
